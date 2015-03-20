@@ -1,0 +1,15 @@
+section.section1 {display: inline;
+                  display: none;   
+                 }
+
+section.section2 {background-color: #FFFFCC; display: inline;
+                  display: none;
+                 }
+
+section.section3 {background-color: #DCDCDC; display: inline;
+                  display: none;
+                 }
+
+#orderdisplay {background-color: #FFFFCC; }
+
+h1 {background-color: blue;}
