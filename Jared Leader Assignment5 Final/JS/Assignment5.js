@@ -1,4 +1,4 @@
-function Render(str)
+function Create(str)
 {
     var getRequest;
     var url = "http://bus-pluto.ad.uab.edu/jsonwebservice/service1.svc/getAllCustomers";
@@ -172,24 +172,33 @@ function GeneratOutput(result)
     
 function MenuChoice()
 {
-    if (document.getElementById("menu").value == "Show Area 1")
-    {
+    if (document.getElementById("menu").value == "Customer List")
+    {   
         document.getElementById("section1").style.display = "inline";
+        document.getElementById("section1").style.visibility = "visible";
         document.getElementById("section2").style.display = "none";
+        document.getElementById("section2").style.visibility = "hidden";
         document.getElementById("section3").style.display = "none";
+        document.getElementById("section3").style.visibility = "hidden";
     }
     
-    else if (document.getElementById("menu").value == "Show Area 2")
+    else if (document.getElementById("menu").value == "Order History")
     {
         document.getElementById("section1").style.display = "none";
+        document.getElementById("section1").style.visibility = "hidden";
         document.getElementById("section2").style.display = "inline";
+        document.getElementById("section2").style.visibility = "visible";
         document.getElementById("section3").style.display = "none";
+        document.getElementById("section3").style.visibility = "hidden";
     }
-    else if (document.getElementById("menu").value == "Show Area 3")
+    else if (document.getElementById("menu").value == "Orders Placed")
     {
         document.getElementById("section1").style.display = "none";
+        document.getElementById("section1").style.visibility = "hidden";
         document.getElementById("section2").style.display = "none";
+        document.getElementById("section2").style.visibility = "hidden";
         document.getElementById("section3").style.display = "inline";
+        document.getElementById("section3").style.visibility = "visible";
     }
     else
     {
